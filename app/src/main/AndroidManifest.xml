@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hatem.movieapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!--<meta-data-->
+        <!--android:name="AA_MODELS"-->
+        <!--android:value="com.example.hatem.movieapp.Models.Movies" />-->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/movie_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar"
+        android:name=".MyApplication"
+        >
+
+        <meta-data android:name="AA_DB_NAME" android:value="MoviesDB.db" />
+        <meta-data android:name="AA_DB_VERSION" android:value="1" />
+
+        <!-- The main/home activity (it has no parent activity) -->
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Children of the main activity -->
+
+        <activity
+            android:name=".DetialedActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".SettingsActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".Review_Activity"
+                    android:parentActivityName=".DetialedActivity"></activity>
+    </application>
+
+</manifest>

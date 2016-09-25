@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="fragment_detailed" type="layout">@layout/fragment_detailed_wide</item>
+    <item name="fragment_reviews_" type="layout">@layout/fragment_reviews_wide</item>
+
+</resources>

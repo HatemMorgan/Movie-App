@@ -1,0 +1,203 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hatem.movieapp.Fragments.Detailed_Fragment"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@color/MovieNameBackground">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Chappie"
+                android:id="@+id/textView_title"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/White"
+                android:textSize="@android:dimen/app_icon_size"
+
+
+                />
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageView_poaster"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_launcher"/>
+
+                </FrameLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2015"
+                        android:id="@+id/textView_year"
+                        android:textColor="@color/White"
+                        android:textStyle="bold"
+                        android:textSize="22sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView_date"
+                        android:layout_marginTop="5dp"
+                        android:textSize="22dp"
+                        android:textColor="@color/White"
+                        android:textStyle="bold"
+                        android:text="120min"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_gravity="center_vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textSize="18dp"
+                        android:text="8.1/10"
+                        android:textStyle="bold"
+                        android:textColor="@color/White"
+                        android:id="@+id/textView_rate"/>
+
+                    <CheckBox android:id="@+id/btn_favourite"
+                        style="?android:attr/starStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp" />
+
+
+                    <Button android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Reviews "
+                        android:background="@color/MovieNameBackground"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/btn_Reviews"
+                        />
+                </LinearLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="22dp"
+                    android:text="Overview "
+                    android:textStyle="bold"
+                    android:textColor="@color/White"
+                    android:layout_marginTop="10dp"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Description"
+                    android:layout_marginTop="10dp"
+                    android:textSize="18dp"
+                    android:id="@+id/textView_overview"
+
+
+                    />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/White"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trailers:"
+            android:textColor="@color/White"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+
+
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView_trailers"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/textView_testLayout"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>
